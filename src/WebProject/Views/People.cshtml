@@ -1,5 +1,5 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.People>
-@using ContentModels = Umbraco.Web.PublishedContentModels;
+﻿@inherits UmbracoViewPage<ContentModels.People>
+@using ContentModels = CoreProject.Models.Published
 @{
     Layout = "Master.cshtml";
 }
@@ -9,7 +9,7 @@
     {
         <a class="employee-grid__item__contact-item" href="http://@(service).com/@content">@service</a>
     }
-}       
+}
 
 @Html.Partial("~/Views/Partials/SectionHeader.cshtml")
 
@@ -27,7 +27,7 @@
         </nav>
         -->
         <div class="employee-grid">
-            @foreach (ContentModels.Person person in Model.Content.Children)
+            @foreach (ContentModels.Person person in Model.Children)
             {
 
                 <div class="employee-grid__item">
