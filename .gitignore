@@ -343,8 +343,10 @@ src/UmbracoPluginReferenceProject/App_Data/NuGetBackup
 src/UmbracoPluginReferenceProject/App_Data/Logs
 src/UmbracoPluginReferenceProject/App_Data/TEMP
 src/UmbracoPluginReferenceProject/App_Data/umbraco.config
+src/UmbracoPluginReferenceProject/App_Data/cache
 
 src/WebProject/App_Data/NuGetBackup
 src/WebProject/App_Data/Logs
 src/WebProject/App_Data/TEMP
 src/WebProject/App_Data/umbraco.config
+src/WebProject/App_Data/cache

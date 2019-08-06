@@ -1,0 +1,45 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+    var backgroundImage = Model.Content.GetPropertyValue<IPublishedContent>("heroBackgroundImage") != null
+        ? Model.Content.GetPropertyValue<IPublishedContent>("heroBackgroundImage").Url
+        : string.Empty;
+}
+<section class="section section--full-height background-image-full overlay overlay--dark section--content-center section--thick-border"
+         style="background-image: url('@backgroundImage')">
+    <div class="section__hero-content">
+        <h1>@Umbraco.Field("heroHeader", "fallbackPropertyAlias", "defaultText")</h1>
+        <p class="section__description">@Model.Content.GetPropertyValue("heroDescription")</p>
+        @if (Model.Content.GetPropertyValue<IPublishedContent>("heroCtalink") != null)
+        {
+            <a class="button button--border--solid" href="@(Model.Content.GetPropertyValue<IPublishedContent>("heroCtalink").Url)">
+                @Model.Content.GetPropertyValue("heroCtacaption", false, "default hero link text")
+            </a>
+        }
+    </div>
+</section>
+
+<section class="section section">
+    @Html.GetGridHtml(Model.Content, "bodyText", "bootstrap3-fluid")
+</section>
+
+
+<section class="section section--themed">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="ta-center">
+                <h2>@(Model.Content.GetPropertyValue<string>("footerHeader"))</h2>
+                <p class="section__description mw-640 ma-h-auto">@(Model.Content.GetPropertyValue<string>("footerDescription"))</p>
+
+                <a class="button button--border--light_solid" href="@(Model.Content.GetPropertyValue<IPublishedContent>("footerCtalink").Url)">
+                    @(Model.Content.GetPropertyValue<string>("footerCtacaption"))
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
