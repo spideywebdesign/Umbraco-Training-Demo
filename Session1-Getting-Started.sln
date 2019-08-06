@@ -8,6 +8,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoPluginReferenceProject", "src\UmbracoPluginReferenceProject\UmbracoPluginReferenceProject.csproj", "{E65C1F2D-EC5F-434D-A9C4-57558CE1EAAD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebProject", "src\WebProject\WebProject.csproj", "{8CC52B14-1D97-4408-8736-669461BA069D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D9474433-473A-4D2D-9F64-813BB45BE2FD} = {D9474433-473A-4D2D-9F64-813BB45BE2FD}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2A2051E7-DFA8-4521-A199-B02375AB3B93}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

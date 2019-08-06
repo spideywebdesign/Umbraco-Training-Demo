@@ -1,9 +1,10 @@
-﻿@inherits UmbracoTemplatePage
+﻿@inherits UmbracoViewPage
+@using ContentModels = CoreProject.Models.Published
 @{
     Layout = null;
 
     // Get basic design settings from the homepage
-    var home = (Home)Model.Content.Site();
+    var home = (ContentModels.Home)Model.Site();
     var colorTheme = Umbraco.GetPreValueAsString(home.ColorTheme);
     var font = Umbraco.GetPreValueAsString(home.Font);
 }
@@ -15,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>@Model.Content.Name - @home.Sitename</title>
+    <title>@Model.Name - @home.Sitename</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
