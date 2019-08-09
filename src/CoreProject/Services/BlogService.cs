@@ -10,7 +10,7 @@ namespace CoreProject.Services
     {
         public IEnumerable<ContentModels.Blogpost> GetAllBlogPosts()
         {
-            var blogPostsXPath = $"//{ContentModels.Home.ModelTypeAlias} [@isDoc]/{ContentModels.Blog.ModelTypeAlias} [@isDoc]/{ContentModels.Blogpost.ModelTypeAlias} [@isDoc]";
+            var blogPostsXPath = $"root/{ContentModels.Home.ModelTypeAlias} [@isDoc]/{ContentModels.Blog.ModelTypeAlias} [@isDoc]/{ContentModels.Blogpost.ModelTypeAlias} [@isDoc]";
             var uHelper = new UmbracoHelper(UmbracoContext.Current);
             var blogPosts = uHelper.TypedContentAtXPath(blogPostsXPath).Select(x => new ContentModels.Blogpost(x));
             return blogPosts ?? Enumerable.Empty<ContentModels.Blogpost>();
