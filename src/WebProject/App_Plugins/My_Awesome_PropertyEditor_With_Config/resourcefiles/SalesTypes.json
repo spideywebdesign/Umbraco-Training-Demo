@@ -1,0 +1,14 @@
+[
+  {
+    "text": "Show All",
+    "value": "ShowAll"
+  },
+  {
+    "text": "For Sale",
+    "value": "ForSale"
+  },
+  {
+    "text": "To Let",
+    "value": "ToLet"
+  }
+]

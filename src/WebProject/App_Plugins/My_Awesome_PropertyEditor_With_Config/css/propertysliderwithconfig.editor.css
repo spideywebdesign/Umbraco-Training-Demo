@@ -1,0 +1,8 @@
+﻿.property-slider-config .emb-el-wrap {
+    display: block;
+    margin-bottom: 1rem;
+    clear: both;
+}
+    .property-slider-config .emb-el-wrap input[type="checkbox"].umb-editor {
+        min-width: auto;
+    }

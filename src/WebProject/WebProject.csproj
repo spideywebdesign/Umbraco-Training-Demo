@@ -264,6 +264,10 @@
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.htm" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
+    <Content Include="App_Plugins\My_Awesome_PropertyEditor_With_Config\css\propertysliderwithconfig.editor.css" />
+    <Content Include="App_Plugins\My_Awesome_PropertyEditor_With_Config\js\propertysliderwithconfig.controller.js" />
+    <Content Include="App_Plugins\My_Awesome_PropertyEditor_With_Config\js\propertysliderwithconfig.resources.js" />
+    <Content Include="App_Plugins\My_Awesome_PropertyEditor_With_Config\views\propertysliderwithconfig.editor.html" />
     <Content Include="App_Plugins\My_Awesome_PropertyEditor\css\propertyslider.editor.css" />
     <Content Include="App_Plugins\My_Awesome_PropertyEditor\js\propertyslider.controller.js" />
     <Content Include="App_Plugins\Terratype.GoogleMapsV3\Images\Example.png" />
@@ -365,6 +369,9 @@
     <Content Include="config\404handlers.config" />
     <Content Include="App_Plugins\My_Awesome_PropertyEditor\resourcefiles\SalesTypes.json" />
     <Content Include="App_Plugins\My_Awesome_PropertyEditor\resourcefiles\SearchParams.json" />
+    <Content Include="App_Plugins\My_Awesome_PropertyEditor_With_Config\package.manifest" />
+    <Content Include="App_Plugins\My_Awesome_PropertyEditor_With_Config\resourcefiles\SalesTypes.json" />
+    <Content Include="App_Plugins\My_Awesome_PropertyEditor_With_Config\resourcefiles\SearchParams.json" />
     <None Include="App_Plugins\My_Awesome_PropertyEditor\package.manifest" />
     <Content Include="App_Plugins\My_Awesome_PropertyEditor\views\propertyslider.editor.html" />
     <None Include="packages.config" />

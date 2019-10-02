@@ -1,7 +1,7 @@
 ﻿{
   propertyEditors: [{
     alias: "myeAwesomePropertyEditor.PropertySlider",
-    name: "Property Slider Configuration",
+    name: "Property Slider",
     editor: {
       view: "~/App_Plugins/My_Awesome_PropertyEditor/views/propertyslider.editor.html",
       valueType: "JSON"
