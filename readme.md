@@ -23,6 +23,7 @@ Umbraco Models Builder is configured to use the Models Builder API. This will on
 To make this work you will need to download the Models Builder extension for Visual Studio from the Marketplace: [Models Builder Extension](https://marketplace.visualstudio.com/items?itemName=ZpqrtBnk.UmbracoModelsBuilderExtension)
 
 ### Configure Extension
+
 Once installed, it will need to be configured. Head to **Tools -> Options -> Umbraco -> ModelsBuilder Options** 
 set:
 Site Url: [your root website URL] (i.e. **https://localhost:44350/**)

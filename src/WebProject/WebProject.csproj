@@ -264,6 +264,8 @@
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.htm" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
+    <Content Include="App_Plugins\My_Awesome_PropertyEditor\css\propertyslider.editor.css" />
+    <Content Include="App_Plugins\My_Awesome_PropertyEditor\js\propertyslider.controller.js" />
     <Content Include="App_Plugins\Terratype.GoogleMapsV3\Images\Example.png" />
     <Content Include="App_Plugins\Terratype.GoogleMapsV3\Images\Logo.png" />
     <Content Include="App_Plugins\Terratype.GoogleMapsV3\Images\m1.png" />
@@ -361,6 +363,10 @@
     <Content Include="config\BackOfficeTours\getting-started.json" />
     <Content Include="config\applications.config" />
     <Content Include="config\404handlers.config" />
+    <Content Include="App_Plugins\My_Awesome_PropertyEditor\resourcefiles\SalesTypes.json" />
+    <Content Include="App_Plugins\My_Awesome_PropertyEditor\resourcefiles\SearchParams.json" />
+    <None Include="App_Plugins\My_Awesome_PropertyEditor\package.manifest" />
+    <Content Include="App_Plugins\My_Awesome_PropertyEditor\views\propertyslider.editor.html" />
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Blog.cshtml" />
@@ -408,9 +414,15 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Content Include="App_Plugins\My_Awesome_PropertyEditor\js\propertyslider.resources.js" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>App_Plugins\My_Awesome_PropertyEditor\package.manifest</ApplicationManifest>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
