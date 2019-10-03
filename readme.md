@@ -6,6 +6,14 @@ Admin Umbraco Login: **Admin**
 
 Password: **testwebsite1234**
 
+## Known Issues
+
+When cloning the site for the first time, after restoring nuget packages, configuring the site and running it, you may get an error "Could not find a part of the path 'C:\Users\johnsm13\Source\Repos\[your-folder]\Umbraco-Training-Demo\src\WebProject\bin\roslyn\csc.exe'"
+
+I have found that the package "Microsoft.CodeDom.Providers.DotNetCompilerPlatform" does not always restore correctly (At the time of writing this, the installed version is 2.0.1).
+
+The solution is to re-install the nuget package for the WebProject **(Ensure you run the command from the WebProject root)** using the command "Update-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -r".
+
 ## Models Builder
 
 Umbraco Models Builder is configured to use the Models Builder API. This will only run if debug mode (```<compilation debug="true" />``` in web.config) is set to true. 
@@ -15,6 +23,7 @@ Umbraco Models Builder is configured to use the Models Builder API. This will on
 To make this work you will need to download the Models Builder extension for Visual Studio from the Marketplace: [Models Builder Extension](https://marketplace.visualstudio.com/items?itemName=ZpqrtBnk.UmbracoModelsBuilderExtension)
 
 ### Configure Extension
+
 Once installed, it will need to be configured. Head to **Tools -> Options -> Umbraco -> ModelsBuilder Options** 
 set:
 Site Url: [your root website URL] (i.e. **https://localhost:44350/**)

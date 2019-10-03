@@ -1,0 +1,67 @@
+﻿{
+  propertyEditors: [{
+    alias: "myAwesomePropertyEditorWithConfig.PropertySlider",
+    name: "Property Slider With Configuration",
+    editor: {
+      view: "~/App_Plugins/My_Awesome_PropertyEditor_With_Config/views/propertysliderwithconfig.editor.html",
+      valueType: "JSON"
+    },
+	prevalues: {
+		fields: [{
+			label: "Carousel Header",
+			description: "Set the default value for the carousel header",
+			key: "defaultCarouselHeader",
+			view: "textstring"
+		},
+		{
+			label: "Slider Speed",
+			description: "Set the default value for the slider speed",
+			key: "defaultSpeed",
+			view: "number"
+		},
+		{
+			label: "Animate Slides?",
+			description: "Set the default value for the animating slides",
+			key: "defaultAnimate",
+			view: "boolean"
+		},
+		{
+			label: "Show Arrows?",
+			description: "Set the default value for the showing arrows",
+			key: "defaultShowArrows",
+			view: "boolean"
+		},
+		{
+			label: "Residential Property Count",
+			description: "Set the default value for number of residential properties to show",
+			key: "defaultResidentialPropertyCount",
+			view: "number"
+		},
+		{
+			label: "Lettings Property Count",
+			description: "Set the default value for number of lettings properties to show",
+			key: "defaultLettingsPropertyCount",
+			view: "number"
+		},
+		{
+			label: "Button Link Text",
+			description: "Set the default value for button link text",
+			key: "defaultButtonLinkText",
+			view: "textstring"
+		},
+		{
+			label: "Show For Current Brand Only",
+			description: "Set the default value for the showing only for current brand",
+			key: "defaultShowForCurrentBrandOnly",
+			view: "boolean"
+		}]
+	}
+  }],
+  javascript: [
+    "~/App_Plugins/My_Awesome_PropertyEditor_With_Config/js/propertysliderwithconfig.controller.js",
+    "~/App_Plugins/My_Awesome_PropertyEditor_With_Config/js/propertysliderwithconfig.resources.js"
+  ],
+  css: [
+	"~/App_Plugins/My_Awesome_PropertyEditor_With_Config/css/propertysliderwithconfig.editor.css",
+  ]
+}

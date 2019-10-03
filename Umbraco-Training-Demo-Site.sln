@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreProject", "src\CoreProject\CoreProject.csproj", "{D9474433-473A-4D2D-9F64-813BB45BE2FD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E65C1F2D-EC5F-434D-A9C4-57558CE1EAAD} = {E65C1F2D-EC5F-434D-A9C4-57558CE1EAAD}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoPluginReferenceProject", "src\UmbracoPluginReferenceProject\UmbracoPluginReferenceProject.csproj", "{E65C1F2D-EC5F-434D-A9C4-57558CE1EAAD}"
 EndProject

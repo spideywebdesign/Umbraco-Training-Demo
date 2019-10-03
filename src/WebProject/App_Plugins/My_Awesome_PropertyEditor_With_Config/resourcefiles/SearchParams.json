@@ -1,0 +1,34 @@
+[
+  {
+    "text": "No Filter",
+    "value": ""
+  },
+  {
+    "text": "Exclude SSTC",
+    "value": "excludesstc"
+  },
+  {
+    "text": "Latest Properties",
+    "value": "latestproperties"
+  },
+  {
+    "text": "Premium Properties",
+    "value": "premiumproperties"
+  },
+  {
+    "text": "Recently Sold/Let",
+    "value": "recentlysoldlet"
+  },
+  {
+    "text": "New Homes",
+    "value": "newhomes"
+  },
+  {
+    "text": "Land",
+    "value": "land"
+  },
+  {
+    "text": "Auctions",
+    "value": "auctions"
+  }
+]

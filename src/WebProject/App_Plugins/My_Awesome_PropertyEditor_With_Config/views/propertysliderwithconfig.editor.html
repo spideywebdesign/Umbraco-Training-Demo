@@ -1,0 +1,125 @@
+﻿<div ng-controller="propertySliderWithConfig.controller" class="umb-editor property-slider-config">
+    <div class="control-group umb-control-group">
+        <div class="emb-el-wrap">
+            <label class="control-label ng-binding" for="carouselHeader"title="Carousel Header">
+                Carousel Header
+                <!-- ngIf: property.validation.mandatory -->
+            </label>
+            <div class="controls">
+                <div class="umb-property-editor" model="property">
+                    <input type="text" name="carouselHeader" ng-model="model.value.carouselHeader" id="carouselHeader" class="umb-editor umb-textstring textstring" ng-required="model.validation.mandatory" ng-trim="true">
+                </div>
+            </div>
+        </div>
+        <div class="emb-el-wrap">
+            <label class="control-label ng-binding" for="speed"title="Speed">
+                Slider Speed (ms)
+                <!-- ngIf: property.validation.mandatory -->
+                <small ng-bind-html="property.description | preserveNewLineInHtml" class="ng-binding"></small>
+            </label>
+            <div class="controls">
+                <div class="umb-property-editor" model="property">
+                    <input type="number" name="speed" ng-model="model.value.speed" id="speed" class="umb-editor umb-textstring textstring" ng-required="model.validation.mandatory" ng-trim="true">
+                </div>
+            </div>
+        </div>
+        <div class="emb-el-wrap">
+            <label class="control-label ng-binding" for="speed"title="Animate">
+                Animate Slides?
+                <!-- ngIf: property.validation.mandatory -->
+                <small ng-bind-html="property.description | preserveNewLineInHtml" class="ng-binding"></small>
+            </label>
+            <div class="controls">
+                <div class="umb-property-editor" model="property">
+                    <input type="checkbox" name="animate" ng-model="model.value.animate" id="animate" class="umb-editor umb-truefalse truefalse" />
+                </div>
+            </div>
+        </div>
+        <div class="emb-el-wrap">
+            <label class="control-label ng-binding" for="showArrows"title="Show Arrows">
+                Show Arrows?
+                <!-- ngIf: property.validation.mandatory -->
+                <small ng-bind-html="property.description | preserveNewLineInHtml" class="ng-binding"></small>
+            </label>
+            <div class="controls">
+                <div class="umb-property-editor" model="property">
+                    <input type="checkbox" name="showArrows" ng-model="model.value.showArrows" id="showArrows" class="umb-editor umb-truefalse truefalse" />
+                </div>
+            </div>
+        </div>
+        <div class="emb-el-wrap">
+            <label class="control-label ng-binding" for="residentialPropertyCount"title="Residential Property Count">
+                Residential Property Count
+                <!-- ngIf: property.validation.mandatory -->
+                <small ng-bind-html="property.description | preserveNewLineInHtml" class="ng-binding"></small>
+            </label>
+            <div class="controls">
+                <div class="umb-property-editor" model="property">
+                    <input type="number" name="residentialPropertyCount" ng-model="model.value.residentialPropertyCount" id="residentialPropertyCount" class="umb-editor umb-textstring textstring" ng-required="model.validation.mandatory" ng-trim="true">
+                </div>
+            </div>
+        </div>
+        <div class="emb-el-wrap">
+            <label class="control-label ng-binding" for="lettingsPropertyCount"title="Lettings Property Count">
+                Lettings Property Count
+                <!-- ngIf: property.validation.mandatory -->
+                <small ng-bind-html="property.description | preserveNewLineInHtml" class="ng-binding"></small>
+            </label>
+            <div class="controls">
+                <div class="umb-property-editor" model="property">
+                    <input type="number" name="lettingsPropertyCount" ng-model="model.value.lettingsPropertyCount" id="lettingsPropertyCount" class="umb-editor umb-textstring textstring" ng-required="model.validation.mandatory" ng-trim="true">
+                </div>
+            </div>
+        </div>
+        <div class="emb-el-wrap">
+            <label class="control-label ng-binding" for="buttonLinkText"title="Button Link Text">
+                Button Link Text
+                <!-- ngIf: property.validation.mandatory -->
+                <small ng-bind-html="property.description | preserveNewLineInHtml" class="ng-binding"></small>
+            </label>
+            <div class="controls">
+                <div class="umb-property-editor" model="property">
+                    <input type="text" name="buttonLinkText" ng-model="model.value.buttonLinkText" id="buttonLinkText" class="umb-editor umb-textstring textstring" ng-required="model.validation.mandatory" ng-trim="true">
+                </div>
+            </div>
+        </div>
+        <div class="emb-el-wrap">
+            <label class="control-label ng-binding" for="showForCurrentBrandOnly"title="Show For Current Brand Only">
+                Show For Current Brand Only
+                <!-- ngIf: property.validation.mandatory -->
+                <small ng-bind-html="property.description | preserveNewLineInHtml" class="ng-binding"></small>
+            </label>
+            <div class="controls">
+                <div class="umb-property-editor" model="property">
+                    <input type="checkbox" name="showForCurrentBrandOnly" ng-model="model.value.showForCurrentBrandOnly" id="showForCurrentBrandOnly" class="umb-editor umb-truefalse truefalse" />
+                </div>
+            </div>
+        </div>
+        <div class="emb-el-wrap">
+            <label class="control-label ng-binding" for="salesType"title="Sales Type">
+                Sales Type
+                <!-- ngIf: property.validation.mandatory -->
+                <small ng-bind-html="property.description | preserveNewLineInHtml" class="ng-binding"></small>
+            </label>
+            <div class="controls">
+                <div class="umb-property-editor" model="property">
+                    <select name="saleType" ng-model="model.value.salesType" ng-options="st.value as st.text for st in salesTypes.data" class="umb-editor umb-dropdown">
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="emb-el-wrap">
+            <label class="control-label ng-binding" for="searchParam"title="Search Parameters">
+                Search Parameters
+                <!-- ngIf: property.validation.mandatory -->
+                <small ng-bind-html="property.description | preserveNewLineInHtml" class="ng-binding"></small>
+            </label>
+            <div class="controls">
+                <div class="umb-property-editor" model="property">
+                    <select name="searchParam" ng-model="model.value.searchParam" ng-options="sp.value as sp.text for sp in searchParams.data" class="umb-editor umb-dropdown">
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
