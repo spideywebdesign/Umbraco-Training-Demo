@@ -1,6 +1,6 @@
 ﻿{
   propertyEditors: [{
-    alias: "myeAwesomePropertyEditorWithConfig.PropertySlider",
+    alias: "myAwesomePropertyEditorWithConfig.PropertySlider",
     name: "Property Slider With Configuration",
     editor: {
       view: "~/App_Plugins/My_Awesome_PropertyEditor_With_Config/views/propertysliderwithconfig.editor.html",

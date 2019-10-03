@@ -4,7 +4,7 @@ using System.Web.Mvc;
 using Umbraco.Web.Mvc;
 using ContentModels = CoreProject.Models.Published;
 
-namespace CoreProject.Models
+namespace CoreProject.Controllers
 {
     public class HomeController : RenderMvcController
     {
