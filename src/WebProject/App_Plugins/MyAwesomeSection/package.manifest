@@ -1,0 +1,7 @@
+{
+  "javascript": [
+    "~/App_Plugins/MyAwesomeSection/js/EditAnimal.Controller.js",
+    "~/App_Plugins/MyAwesomeSection/js/EditPokemon.Controller.js",
+    "~/App_Plugins/MyAwesomeSection/js/EvolvePokemon.Controller.js"
+  ]
+}

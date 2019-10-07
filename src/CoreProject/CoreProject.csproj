@@ -245,9 +245,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\UmbracoTrainingDemoConstants.cs" />
+    <Compile Include="Controllers\Api\DemoSectionAnimalsController.cs" />
+    <Compile Include="Controllers\Api\DemoSectionAnimalsTreeController.cs" />
+    <Compile Include="Controllers\Api\DemoSectionPokemonController.cs" />
+    <Compile Include="Controllers\Api\DemoSectionPokemonTreeController.cs" />
     <Compile Include="Events\UmbracoEvents.cs" />
     <Compile Include="Helpers\IocHelper.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Models\DemoSectionAnimal.cs" />
+    <Compile Include="Models\DemoSectionPokemon.cs" />
+    <Compile Include="Models\DemoSectionPokemonKind.cs" />
     <Compile Include="Models\MyAwesomePropertyEditor.PropertySlider.cs" />
     <Compile Include="Models\Published\Blog.generated.cs">
       <DependentUpon>ModelsBuilder.cs</DependentUpon>
@@ -315,8 +323,13 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropertyValueConverters\PropertySliderPropertyValueConverter.cs" />
+    <Compile Include="Repositories\DemoSectionAnimalsRepository.cs" />
+    <Compile Include="Repositories\DemoSectionPokemonRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IDemoSectionAnimalsRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IDemoSectionPokemonRepository.cs" />
     <Compile Include="Services\BlogService.cs" />
     <Compile Include="Services\Interfaces\IBlogService.cs" />
+    <Compile Include="Trees\Actions\DemoSectionPokemonEvolveAction.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

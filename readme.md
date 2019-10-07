@@ -6,6 +6,24 @@ Admin Umbraco Login: **Admin**
 
 Password: **testwebsite1234**
 
+## Purpose of this project
+
+The idea behind this demo project is to provide examples of various bits of Umbraco functionality / implementations.
+
+This is not designed to have everything in it, it's a good starting point for a number of types of project, from the simple to the more complex. 
+
+This is purely a learning resource.
+
+### Areas covered
+
+- Project setup
+- Models Builder Configuration
+- Dependency Injection
+- Route Hijacking
+- Custom Property Editors
+- Custom Dashboards
+- Custom Sections
+
 ## Known Issues
 
 When cloning the site for the first time, after restoring nuget packages, configuring the site and running it, you may get an error "Could not find a part of the path 'C:\Users\johnsm13\Source\Repos\[your-folder]\Umbraco-Training-Demo\src\WebProject\bin\roslyn\csc.exe'"

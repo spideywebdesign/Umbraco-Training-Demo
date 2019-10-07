@@ -26,17 +26,21 @@ namespace CoreProject.Helpers
             builder.RegisterControllers(typeof(UmbracoApplication).Assembly);
             builder.RegisterApiControllers(typeof(UmbracoApplication).Assembly);
 
+
             //builder.RegisterApiControllers(typeof(Umbraco.Forms.Web.Trees.FormTreeController).Assembly);
             builder.RegisterApiControllers(typeof(Terratype.Controllers.AjaxController).Assembly);
 
-            //Fetch all services from assembly based on naming convention "EndsWith" Service or Strategy
+
+            //Fetch all services from assembly based on naming convention "EndsWith" Service or Repository
             builder.RegisterAssemblyTypes(typeof(UmbracoEvents).Assembly)
-                .Where(t => t.Name.EndsWith("Service"))
+                .Where(t => 
+                    t.Name.EndsWith("Service")
+                    ||
+                    t.Name.EndsWith("Repository")
+                    )
                 .AsImplementedInterfaces()
                 .SingleInstance();
 
-            //builder.RegisterType<RobotsService>().As<IRobotsService>().SingleInstance();
-            //builder.RegisterType<AutoNodeGeneratorService>().As<IAutoNodeGeneratorService>().SingleInstance();
 
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));

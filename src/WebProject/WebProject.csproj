@@ -273,6 +273,13 @@
     <Content Include="App_Plugins\My_Awesome_PropertyEditor_With_Config\views\propertysliderwithconfig.editor.html" />
     <Content Include="App_Plugins\My_Awesome_PropertyEditor\css\propertyslider.editor.css" />
     <Content Include="App_Plugins\My_Awesome_PropertyEditor\js\propertyslider.controller.js" />
+    <Content Include="App_Plugins\MyAwesomeSection\js\EditAnimal.controller.js" />
+    <Content Include="App_Plugins\MyAwesomeSection\js\EditPokemon.Controller.js" />
+    <Content Include="App_Plugins\MyAwesomeSection\js\EvolvePokemon.Controller.js" />
+    <Content Include="App_Plugins\MyAwesomeSection\Lang\en-GB.xml" />
+    <Content Include="App_Plugins\MyAwesomeSection\BackOffice\Animals\Edit.html" />
+    <Content Include="App_Plugins\MyAwesomeSection\BackOffice\Pokemon\Edit.html" />
+    <Content Include="App_Plugins\MyAwesomeSection\BackOffice\Pokemon\Evolve.html" />
     <Content Include="App_Plugins\Terratype.GoogleMapsV3\Images\Example.png" />
     <Content Include="App_Plugins\Terratype.GoogleMapsV3\Images\Logo.png" />
     <Content Include="App_Plugins\Terratype.GoogleMapsV3\Images\m1.png" />
@@ -339,6 +346,22 @@
     <Content Include="css\umbraco-starterkit-style.css" />
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="images\Pokemon\dewgong.png" />
+    <Content Include="images\Pokemon\dewgong_large.png" />
+    <Content Include="images\Pokemon\fearow.png" />
+    <Content Include="images\Pokemon\fearow_large.png" />
+    <Content Include="images\Pokemon\goldeen.png" />
+    <Content Include="images\Pokemon\goldeen_large.png" />
+    <Content Include="images\Pokemon\raticate.png" />
+    <Content Include="images\Pokemon\raticate_large.png" />
+    <Content Include="images\Pokemon\rattata.png" />
+    <Content Include="images\Pokemon\rattata_large.png" />
+    <Content Include="images\Pokemon\seaking.png" />
+    <Content Include="images\Pokemon\seaking_large.png" />
+    <Content Include="images\Pokemon\seel.png" />
+    <Content Include="images\Pokemon\seel_large.png" />
+    <Content Include="images\Pokemon\spearow.png" />
+    <Content Include="images\Pokemon\spearow_large.png" />
     <Content Include="scripts\umbraco-starterkit-app.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -378,6 +401,7 @@
     <Content Include="App_Plugins\My_Awesome_Dashboard\package.manifest" />
     <None Include="App_Plugins\My_Awesome_PropertyEditor\package.manifest" />
     <Content Include="App_Plugins\My_Awesome_PropertyEditor\views\propertyslider.editor.html" />
+    <None Include="App_Plugins\MyAwesomeSection\package.manifest" />
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Blog.cshtml" />
@@ -426,6 +450,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Plugins\MyAwesomeSection\css\" />
     <Folder Include="App_Plugins\My_Awesome_Dashboard\images\" />
   </ItemGroup>
   <ItemGroup>
