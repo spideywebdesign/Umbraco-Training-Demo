@@ -264,6 +264,9 @@
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.htm" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
+    <Content Include="App_Plugins\My_Awesome_Dashboard\css\welcomedashboard.css" />
+    <Content Include="App_Plugins\My_Awesome_Dashboard\js\welcomedashboard.controller.js" />
+    <Content Include="App_Plugins\My_Awesome_Dashboard\views\welcomedashboard.html" />
     <Content Include="App_Plugins\My_Awesome_PropertyEditor_With_Config\css\propertysliderwithconfig.editor.css" />
     <Content Include="App_Plugins\My_Awesome_PropertyEditor_With_Config\js\propertysliderwithconfig.controller.js" />
     <Content Include="App_Plugins\My_Awesome_PropertyEditor_With_Config\js\propertysliderwithconfig.resources.js" />
@@ -372,6 +375,7 @@
     <Content Include="App_Plugins\My_Awesome_PropertyEditor_With_Config\package.manifest" />
     <Content Include="App_Plugins\My_Awesome_PropertyEditor_With_Config\resourcefiles\SalesTypes.json" />
     <Content Include="App_Plugins\My_Awesome_PropertyEditor_With_Config\resourcefiles\SearchParams.json" />
+    <Content Include="App_Plugins\My_Awesome_Dashboard\package.manifest" />
     <None Include="App_Plugins\My_Awesome_PropertyEditor\package.manifest" />
     <Content Include="App_Plugins\My_Awesome_PropertyEditor\views\propertyslider.editor.html" />
     <None Include="packages.config" />
@@ -421,7 +425,9 @@
       <Name>CoreProject</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Plugins\My_Awesome_Dashboard\images\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="App_Plugins\My_Awesome_PropertyEditor\js\propertyslider.resources.js" />
   </ItemGroup>
