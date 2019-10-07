@@ -1,0 +1,8 @@
+{
+  "css": [
+    "~/app_plugins/my_awesome_dashboard/css/welcomedashboard.css"
+  ],
+  "javascript": [
+    "~/app_plugins/my_awesome_dashboard/js/welcomedashboard.controller.js"
+  ]
+}
